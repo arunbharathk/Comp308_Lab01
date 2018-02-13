@@ -7,7 +7,19 @@ let indexController = require('../controllers/index');
 
 router.get('/', (req, res) => {
   indexController.home(req, res);
+  
 });
+
+
+router.post('/feedback', (req, res) => {
+  indexController.feedback(req, res);
+  
+});
+
+router.post('/thankyou', (req, res) => {
+  indexController.thankyou(req, res);
+});
+
 
 /* GET home page.
 router.get('/', (req, res, next) => {
